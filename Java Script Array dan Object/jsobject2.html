@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let siswa1 = {
+            nama:"Ahmad Faiz",
+            umur:20,
+            berat:45,
+            cetak : function(){
+                return this.nama + " usianya " + this.umur;
+            }
+        }
+        document.write(siswa1.nama);
+        document.write("<br/" + siswa1.cetak());
+        console.log(siswa1.cetak());
+    </script>
+</body>
+</html>
