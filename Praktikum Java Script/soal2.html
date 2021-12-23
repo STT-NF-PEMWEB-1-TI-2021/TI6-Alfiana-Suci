@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah </title>
+    <style>
+        .field1{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="field1" style="background-color: rgb(216, 190, 233);">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+    <table border="1" cellspacing="0"> 
+        <tr style="text-align: center;">
+            <td>Masukan Nilai</td>
+            <td >Valas</td>
+            <td>Nilai Rupiah</td>
+        </tr>
+        <tr>
+            <td><input type="nilai" value="0" size="10" id="uang" onchange="kursRupiah()">
+            <td><select name="Valas" id="mata" onchange="kursRupiah()">
+                    <option value="dollar">Dollar US</option>
+                <td><input type="rupiah" value="0" size="10" id="rupiah" onchange="kursRupiah()"></td>
+        </tr>
+    </table>
+</fieldset>
+
+<script>
+    function kursRupiah(){
+        let uang = Number(document.getElementById("uang").value);
+        let mata = document.getElementById("mata").value;
+
+        if (mata=== "dollar"){
+            document.getElementById("rupiah").value= uang * 14650;
+        }
+        else {
+            
+        }
+    }
+</script>
+</body>
+</html>
